@@ -4,6 +4,11 @@
 
 Kurze Einführung in die Thematik
 
+### static libraries
+
+C++ selbst kann nur sehr eingeschränkt mit der Hardware kommunizieren. Außerdem möchte man zur Reduktion der build-Dauer unabhängige Programmteile auslagern und gebräuchliche Funktionalitäten in mehreren Projekten verwenden.
+Für all dies kann man static program libraries einsetzen. Wir werden kurz erklären, was diese sind und wie man sie verwendet.
+
 ### Folien zum Vortrag
 
 Die Vortragsfolien stehen als [PDF](URL) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im Ordner `slides`.
