@@ -1,4 +1,4 @@
-# Workshop DD. MMMM YYYY
+# Workshop 15. Juni 2012
 
 ## Inhalt
 
