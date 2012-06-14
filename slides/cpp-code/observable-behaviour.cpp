@@ -7,8 +7,14 @@ void unobservable(int& p)
 	p = i;
 }
 
+void observable(
+	volatile int& p)
+{
+	p = 42;
+}
+
 /*$ observable $*/
-void observable()
+int main()
 {
 	volatile int visible = 21;
 	visible *= 2;
