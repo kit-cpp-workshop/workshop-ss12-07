@@ -28,6 +28,12 @@
 \usepackage{templates/beamerthemekit}
 % \usepackage{templates/beamerthemekitwide}
 
+\usepackage{multicol}
+
+% inserted by Koios to hide comments in lstlistings
+\newcommand{\none}[1]{}
+\lstset{language=C++, basicstyle=\footnotesize \ttfamily, numbers=left, numberstyle=\tiny\color{gray}, tabsize=6, xleftmargin=2em, rangeprefix=/*$\ , rangesuffix=\ $*/, includerangemarker=false}
+
 %% TITLE PICTURE
 
 % if a custom picture is to be used on the title page, copy it into the 'logos'
@@ -59,7 +65,7 @@
 
 \title[C++ Workshop]{C++ Workshop}
 \subtitle{7. Block, 15.06.2012}
-\author{Christian Käser, Robert Schneider}
+\author{Christian KÃ¤ser, Robert Schneider}
 
 \institute{}
 

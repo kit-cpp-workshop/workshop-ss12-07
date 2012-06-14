@@ -32,6 +32,12 @@
 	\end{itemize}
 	
 	\pause
+	{\footnotesize
+		Jede C++ Implementierung (build system) muss Programme erzeugen, deren beobachtbares Verhalten dem vom Standard spezifizierten entsprechen.
+		Alle weiteren Spezifikationen im Standard (z.B. Resultat von Addition) muss nur für beobachtbares Verhalten eingehalten werden $\Longrightarrow$ erlaubt Optimierungen.
+	}
+	
+	\pause
 	\vspace{1em}
 	
 	\begin{block}{Beobachtbares Verhalten}
@@ -40,6 +46,22 @@
 			\item I/O-Funktionen der (Standard-)Bibliothek
 		\end{itemize}
 	\end{block}
+\end{frame}
+
+\lstset{tabsize=2}
+\begin{frame}[t]{Beispiel}
+	\vspace{-2em}
+	\begin{columns}[t]
+		\column{0.47\textwidth}
+			\onslide*<+-> { \lstinputlisting[linerange=begin-observable, showcomments=false, commentstyle=\none, mu]{cpp-code/observable-behaviour.cpp} }
+			
+		\column{0.53\textwidth}
+			\onslide*<+> { \lstinputlisting[linerange=observable-invisible, includerangemarker=false, commentstyle=\none, firstnumber=]{cpp-code/observable-behaviour.cpp} }
+			\onslide*<+> { \lstinputlisting[linerange=observable-not_yet_visible, includerangemarker=false, commentstyle=\none]{cpp-code/observable-behaviour.cpp} }
+			\onslide*<+> { \lstinputlisting[linerange=observable-function_calls, includerangemarker=false, commentstyle=\none]{cpp-code/observable-behaviour.cpp} }
+			\onslide*<+> { \lstinputlisting[linerange=observable-IO, includerangemarker=false, commentstyle=\none]{cpp-code/observable-behaviour.cpp} }
+			\onslide*<+> { \lstinputlisting[linerange=observable-, includerangemarker=false, commentstyle=\none]{cpp-code/observable-behaviour.cpp} }
+	\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Was kann C++?}
@@ -79,7 +101,7 @@
 	\begin{itemize}[<+->]
 		\item Der Compiler kennt die target platform (z.B. Linux auf x64)!
 		\item Compiler-spezifische Anweisungen können in Plattform-abhängige Befehle übersetzt werden
-		\item bestimme Anweisungen für Kommunikation mit Hardware oder Betriebssystem
+		\item bestimmte Anweisungen (z.B. für CPU) für Kommunikation mit Hardware oder Betriebssystem
 	\end{itemize}
 	
 	\vspace{2em}
