@@ -21,15 +21,17 @@ Ein Screencast des Vortrags wird nach dem Workshop an dieser Stelle verlinkt.
 
 Sendet, nachdem ihr alle Aufgaben abgearbeitet habt, einen Pull-Request an das Workshop-Repository. Stellt sicher, dass ihr vorher alle eure Änderungen in euren Fork übertragen habt. Nennt euren Workshop-Betreuer im Text des Pull-Requests, einer der Betreuer (bevorzugt der genannte) wird dann eure Lösungen durchsehen, kommentieren und nach Abschluss des Reviews den Pull-Request als abgelehnt markieren.
 
-### Aufgabe 0: Vorbereitung
+### Aufgabe 1: SDL Einstieg
 
-Inhalt?!
+[SDL Website](http://www.libsdl.org/)
 
+Windows-Nutzer müssen die SDL Development Libraries von der Website herunterladen, Nutzer Debian-basiert Linux-Distributionen können auf das Paket libsdl-dev zurückgreifen. Unter MacOS Homebrew nennt sich das Paket sdl.
 
-### Aufgabe 1: Aufgabentitel
+Für den Einstieg soll eine Anwendung geschrieben werden, die ein großes rotes Fenster erzeugt, welches mit Escape geschlossen werden kann.
 
-Aufgabenbeschreibung
+### Aufgabe 2: Schach GUI (Graphical User Interface)
 
+Baut mit SDL eine GUI für euer Schachspiel. Der Funktionsumfang der GUI ist euch freigestellt. Denkbar sind sowohl einfache GUIs, die nur den aktuellen Zustand des Spielbretts anzeigen, als auch komplexere Varianten die Interaktionsmöglichkeiten wie Drag & Drop implementieren.
 
 ### Bonusaufgabe: Project Euler
 
