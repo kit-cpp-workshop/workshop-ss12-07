@@ -27,7 +27,7 @@ Sendet, nachdem ihr alle Aufgaben abgearbeitet habt, einen Pull-Request an das W
 
 Windows-Nutzer müssen die SDL Development Libraries von der Website herunterladen, Nutzer Debian-basiert Linux-Distributionen können auf das Paket libsdl-dev zurückgreifen. Unter MacOS Homebrew nennt sich das Paket sdl.
 
-Für den Einstieg soll eine Anwendung geschrieben werden, die ein großes rotes Fenster erzeugt, welches mit Escape geschlossen werden kann.
+Für den Einstieg soll eine Anwendung geschrieben werden, die ein großes rotes Fenster erzeugt, welches mit Escape oder dem Schließen-Button des Fensters geschlossen werden kann.
 
 ### Aufgabe 2: Schach GUI (Graphical User Interface)
 
