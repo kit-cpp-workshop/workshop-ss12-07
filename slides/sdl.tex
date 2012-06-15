@@ -1,0 +1,51 @@
+\section{SDL: Simple Directmedia Layer}
+\begin{frame}
+	\includegraphics[width=\textwidth]{images/SDL_logo.png}
+\end{frame}
+
+\subsection{Was ist das?}
+\begin{frame}{Was ist das?}
+	Eine \textbf{in C geschriebene} plattformunabhängige modulare Multimediabibliothek zum Zugriff auf:
+	\begin{itemize}
+		\item Grafik (sdl, sdl\_gfx)
+		\item Audio (sdl\_sound, sdl\_mixer)
+		\item Eingabegeräte (sdl)
+		\item Netzwerk (sdl\_net)
+		\item Und einiges mehr (sdl\_image, sdl\_rtf, sdl\_ttf, ...)
+	\end{itemize}
+	
+	Wir konzentrieren uns nur auf das Hauptmodul (Grafik, Eingabegeräte)
+\end{frame}
+
+\subsection{Grundkonzepte}
+\begin{frame}[fragile]{Surfaces}
+	\verb|SDL_Surface| repräsentiert eine Oberfläche, auf die gezeichnet werden kann:
+	\begin{itemize}
+		\item der Bildschirm
+		\item eine Textur bzw. ein Bild
+	\end{itemize}
+	Außerdem kann von \verb|SDL_Surface| natürlich auch gelesen werden.
+\end{frame}
+
+\begin{frame}[fragile]{Grundlegende Operationen auf Surfaces}
+	\begin{itemize}
+		\item \verb|SDL_CreateRGBSurface|: Erzeuge ein neues Surfaceobjekt.
+		\item \verb|SDL_SetVideoMode|: Öffne ein Fenster und gebe ein Surfaceobjekt zurück, das dessen Hintergrund repräsentiert.
+		\item \verb|SDL_LoadBMP|: Lade ein Surfaceobjekt aus einer .bmp Bilddatei.
+		\item \verb|SDL_FreeSurface|: Lösche ein Surfaceobjekt.
+		\item \verb|SDL_FillRect|: Fülle einen Teil eines Surfaceobjekts mit einer Farbe.
+		\item \verb|SDL_BlitSurface|: Kopiere einen Ausschnitt aus einem Surfaceobjekt in ein anderes.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Events}
+	Ereignisse wie etwa Tastendrücke und Mausbewegungen werden über die Struktur \verb|SDL_Event| repräsentiert.
+	Sie werden von SDL in einem Puffer abgelegt, aus dem man sich die Ereignisse mit \verb|SDL_PollEvent| oder 
+	\verb|SDL_WaitEvent| nach und nach abholen kann.
+	
+	Normalerweise in der Hauptschleife jeweils am Anfang.
+\end{frame}
+
+\begin{frame}[fragile]{Events}
+	\lstinputlisting{cpp-code/sdl_event.cpp}
+\end{frame}
