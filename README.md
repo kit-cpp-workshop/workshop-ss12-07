@@ -13,12 +13,19 @@ verwendet.
 
 ### Folien zum Vortrag
 
-Die Vortragsfolien stehen als [PDF](URL) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im 
+Die Vortragsfolien stehen als [PDF](https://github.com/downloads/kit-cpp-workshop/workshop-ss12-07/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im 
 Ordner `slides`.
 
 ### Screencast
 
-Ein Screencast des Vortrags wird nach dem Workshop an dieser Stelle verlinkt.
+Eine Aufzeichnung des Vortrages steht zum [Download](http://ubuntuone.com/0uR53kLDr7fdv90Ez834sH) bereit.
+
+ * ab 00:00 Intro/Begrüßung
+ * ab 00:31 Something about C++/Beobachtbares Verhalten
+ * ab 07:38 static libraries
+ * ab 20:23 Live-Demo: static libraries mit Eclipse CDT einbinden
+ * ab 22:05 SDL: Simple Directmedia Layer
+ * ab 28:37 Vorstellung der Praxisaufgaben
 
 ## Aufgaben
 
