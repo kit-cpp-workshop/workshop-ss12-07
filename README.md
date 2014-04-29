@@ -13,7 +13,7 @@ verwendet.
 
 ### Folien zum Vortrag
 
-Die Vortragsfolien stehen als [PDF](kit-cpp-workshop.github.com/raw/downloads/workshops/ss12-07/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im 
+Die Vortragsfolien stehen als [PDF](https://github.com/kit-cpp-workshop/kit-cpp-workshop.github.com/raw/downloads/workshops/ss12-07/slides.pdf) zum Download bereit. Außerdem liegt der LaTeX-Quellcode zu den Folien im 
 Ordner `slides`.
 
 ### Screencast
